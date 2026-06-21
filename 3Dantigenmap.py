@@ -143,7 +143,7 @@ axis_lim = (-max_range - padding, max_range + padding)
 
 print(f"✅ 坐标轴范围：{axis_lim}，以(0,0,0)为中心对称")
 
-# ===================== 绘图（gold点绝对在中心） =====================
+# ===================== 绘图 =====================
 fig = plt.figure(figsize=(12,9))
 ax = fig.add_subplot(111, projection='3d')
 
@@ -204,7 +204,7 @@ ax.zaxis.labelpad = -10
 
 
 
-# 调整视角，让中心更直观
+# 调整视角
 ax.view_init(elev=-4, azim=-10)
 plt.tight_layout()
 
